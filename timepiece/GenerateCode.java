@@ -7,7 +7,7 @@ import java.util.regex.Pattern;
 
 public class GenerateCode {
 	public static void main(String[] args) {
-		List<String>[][] strings = TimeNamesGerman.getTimeStrings();
+		List<String>[][] strings = TimeNamesBavarian.getTimeStrings();
 		List<Pattern>[][] patterns = new List[strings.length][];
 
 		for (int hour = 0; hour < strings.length; hour++) {
@@ -51,7 +51,7 @@ public class GenerateCode {
 			}
 		}
 		
-		String solution = "FÜNFFZEHNU|DREIHNACHT|VORELFHALB|UHRVIERTEL|SIEBENACHT|DREISECHSZ|NEUNDZWÖLF|ZWEINSLUHR|ELFÜNFZEHN|UNDVIERZIG".toLowerCase();
+		String solution = "fümdreifiadlzwoa|fümfuchzehneuhrf|sofümfebnochvorü|fzwanzgespunktwc|üoanhoibaonochel|voriarvozweifhni|vfuchzehnozwoans|ndreiibgfümfachd|simnndrsechsdälf|fiarzgeanainuhrs|kfuchzgerzehneoa|dzwanzgefiarzgee";
 		
 		int totalCount = 0;
 		
@@ -84,8 +84,8 @@ public class GenerateCode {
 								minute * 5));
 						
 						for (String l : lines) {
-							String firstByte  = "000000" + l.substring(0,2);
-							String secondByte = l.substring(2,10);
+							String firstByte  = l.substring(0,8);
+							String secondByte = l.substring(8,16);
 							if(timeBytes.length() > 0) {
 								timeBytes.append(", ");
 							}

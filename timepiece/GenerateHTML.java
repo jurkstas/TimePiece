@@ -15,7 +15,7 @@ public class GenerateHTML {
 	public static void main(String[] args) throws IOException {
 		String cand = "elevenntsix|sevenfourty|twelvehotwo|eightoneten|threertnine|fivefifteen|twentypastl|fourthytenv|fiftythirty|clockfourty|gtwofiveten";
 
-		List<String>[][] strings = TimeNamesGerman.getTimeStrings();
+		List<String>[][] strings = TimeNamesBavarian.getTimeStrings();
 		List<Pattern>[][] patterns = new List[strings.length][];
 
 		for (int hour = 0; hour < strings.length; hour++) {
