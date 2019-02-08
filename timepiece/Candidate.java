@@ -17,19 +17,19 @@ public class Candidate {
 //		"XXXXXXXXXX";
 
 	
-	public String candidate = //11x11
-		"XXXXXXXXXXX|" +
-		"XXXXXXXXXXX|" +
-		"XXXXXXXXXXX|" +
-		"XXXXXXXXXXX|" +
-		"XXXXXXXXXXX|" +
-		"XXXXXXXXXXX|" +
-		"XXXXXXXXXXX|" +
-		"XXXXXXXXXXX|" +
-		"XXXXXXXXXXX|" +
-		"XXXXXXXXXXX|" +
-		"XXXXXXXXXXX";
+	public String candidate; {
 	
+	
+	
+	for (int bla = 0; bla < 20; bla++) {
+		for (int columns = 0; columns < 20; columns++) {
+			candidate += "X";
+		}
+		
+		candidate += "|";
+	}	
+	}
+
 	
 	
 	//circle
