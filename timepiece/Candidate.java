@@ -20,9 +20,9 @@ public class Candidate {
 	public String candidate; {
 	
 	
-	
-	for (int bla = 0; bla < 20; bla++) {
-		for (int columns = 0; columns < 20; columns++) {
+		candidate = "";
+	for (int bla = 0; bla < 12; bla++) {
+		for (int columns = 0; columns < 25; columns++) { //16x22 - OK. 16x16 - NOK.
 			candidate += "X";
 		}
 		
