@@ -147,7 +147,7 @@ public class TimeNamesLithuanian {
 				}
 				
 				if(minute != 0) {
-					times[hour][minute].add(String.format("po %s %s", hgs, mn).trim());
+					times[hour][minute].add(String.format("po %s %s", hgs, mn).trim()); //pridėk "dvylika dvidešimt penkios"?
 					if (hour > 0) times[hour][minute].add(String.format("po %s %s", hgp, mn).trim());
 				}
 				
