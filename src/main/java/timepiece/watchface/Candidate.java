@@ -1,7 +1,7 @@
-package timepiece;
+package timepiece.watchface;
 
 public class Candidate {
-	public int fittnes = Integer.MIN_VALUE;
+    private Fitness fitness = new Fitness();
 
 
 //	public String candidate = //10x10
@@ -16,23 +16,22 @@ public class Candidate {
 //		"XXXXXXXXXX|" +
 //		"XXXXXXXXXX";
 
-	
-	public String candidate = //11x11
-		"XXXXXXXXXXX|" +
-		"XXXXXXXXXXX|" +
-		"XXXXXXXXXXX|" +
-		"XXXXXXXXXXX|" +
-		"XXXXXXXXXXX|" +
-		"XXXXXXXXXXX|" +
-		"XXXXXXXXXXX|" +
-		"XXXXXXXXXXX|" +
-		"XXXXXXXXXXX|" +
-		"XXXXXXXXXXX|" +
-		"XXXXXXXXXXX";
-	
-	
-	
-	//circle
+
+    private String candidate = //11x11
+            "XXXXXXXXXXX|" +
+                    "XXXXXXXXXXX|" +
+                    "XXXXXXXXXXX|" +
+                    "XXXXXXXXXXX|" +
+                    "XXXXXXXXXXX|" +
+                    "XXXXXXXXXXX|" +
+                    "XXXXXXXXXXX|" +
+                    "XXXXXXXXXXX|" +
+                    "XXXXXXXXXXX|" +
+                    "XXXXXXXXXXX|" +
+                    "XXXXXXXXXXX";
+
+
+    //circle
 //	public String candidate = //circle
 //			      "ONER|" +
 //			    "SETHIRTY|" +
@@ -50,7 +49,7 @@ public class Candidate {
 //			  "THIRTYTWENTY|" +
 //			   "FIVENONE|" +
 //			     "YTEN";
-	
+
 //		public String candidate = //triangle		
 //			"PSEVENSIXTWELVEN|" +
 //			"ONELEVENINEIGHT|" +
@@ -68,7 +67,7 @@ public class Candidate {
 //			"TWO|" +
 //			"TO|" +
 //			"W";
-	
+
 //		public String candidate = //diamond
 //			"H|" +
 //			"TO|" +
@@ -91,19 +90,35 @@ public class Candidate {
 //			"TWO|" +
 //			"TO|" +
 //			"O";
-		
-	public int checkedOK = 0;
-	public int checkedNOK = 0;
-	public int checkedTimesOK = 0;
-	public int checkedTimesNOK = 0;
-	public int splitPos = 0;
-	public double variance = 0;
-	public double avgLen = 0;
-	
-	@Override
-	public String toString() {
-		return String.format("%10d: splits: %d, check ok: %d, nok: %d, times ok: %d, nok %d, %s", fittnes, splitPos,
-				checkedOK,checkedNOK,checkedTimesOK,checkedTimesNOK,
-				candidate);
-	}
+
+    @Override
+    public String toString() {
+        return String.format("%10d: splits: %d, check ok: %d, nok: %d, times ok: %d, nok %d, %s", fitness.getFitness(), fitness.getSplitPos(),
+                fitness.getCheckedOK(), fitness.getCheckedNOK(), fitness.getCheckedTimesOK(), fitness.getCheckedTimesNOK(),
+                getCandidate());
+    }
+
+    public Fitness getFitnessResult() {
+        return fitness;
+    }
+
+    public void setFitnessResult(Fitness fitness) {
+        this.fitness = fitness;
+    }
+
+    public int getFitness() {
+        return fitness.getFitness();
+    }
+
+    public void setFitness(int fitness) {
+        this.fitness.setFitness(fitness);
+    }
+
+    public String getCandidate() {
+        return candidate;
+    }
+
+    public void setCandidate(String candidate) {
+        this.candidate = candidate;
+    }
 }
