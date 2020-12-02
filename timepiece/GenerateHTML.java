@@ -13,7 +13,7 @@ public class GenerateHTML {
 
 	@SuppressWarnings("unchecked")
 	public static void main(String[] args) throws IOException {
-		String cand = "elevenntsix|sevenfourty|twelvehotwo|eightoneten|threertnine|fivefifteen|twentypastl|fourthytenv|fiftythirty|clockfourty|gtwofiveten";
+		String cand = "zehnemfümfe|dreifiadlfa|nainivoredl|fnochpunkti|uhuhrchoiba|achdsimnnei|fizehneälfk|üadreinainl|sechsrfiarh|szwoaufümfe|zweifaoansr";
 
 		List<String>[][] strings = TimeNamesBavarian.getTimeStrings();
 		List<Pattern>[][] patterns = new List[strings.length][];

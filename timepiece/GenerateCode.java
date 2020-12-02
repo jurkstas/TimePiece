@@ -51,7 +51,7 @@ public class GenerateCode {
 			}
 		}
 		
-		String solution = "fümdreifiadlzwoa|fümfuchzehneuhrf|sofümfebnochvorü|fzwanzgespunktwc|üoanhoibaonochel|voriarvozweifhni|vfuchzehnozwoans|ndreiibgfümfachd|simnndrsechsdälf|fiarzgeanainuhrs|kfuchzgerzehneoa|dzwanzgefiarzgee";
+		String solution = "zehnemfümfe|dreifiadlfa|nainivoredl|fnochpunkti|uhuhrchoiba|achdsimnnei|fizehneälfk|üadreinainl|sechsrfiarh|szwoaufümfe|zweifaoansr";
 		
 		int totalCount = 0;
 		
@@ -84,8 +84,8 @@ public class GenerateCode {
 								minute * 5));
 						
 						for (String l : lines) {
-							String firstByte  = l.substring(0,8);
-							String secondByte = l.substring(8,16);
+							String firstByte  = "000000" + l.substring(0,2);
+							String secondByte = l.substring(3,11);
 							if(timeBytes.length() > 0) {
 								timeBytes.append(", ");
 							}
