@@ -37,7 +37,7 @@ public class GenAlg {
 	public void run() {
 		
 		System.out.println("creating patterns");
-		createPatterns(TimeNamesEnglish.getTimeStrings());
+		createPatterns(TimeNamesBavarian.getTimeStrings());
 		
 		System.out.println("loading solution");
 		loadSolution();
