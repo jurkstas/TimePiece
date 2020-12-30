@@ -21,8 +21,8 @@ public class Candidate {
 	
 	
 		candidate = "";
-	for (int bla = 0; bla < 12; bla++) {
-		for (int columns = 0; columns < 25; columns++) { //16x22 - OK. 16x16 - NOK.
+	for (int rows = 0; rows < 1; rows++) {
+		for (int columns = 0; columns < 300; columns++) { //16x22 - OK. 16x16 - NOK.
 			candidate += "X";
 		}
 		
