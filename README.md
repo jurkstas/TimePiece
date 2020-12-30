@@ -1,7 +1,8 @@
 This fork
 =============
-I have added Lithuanian language and some changes to how candidate is generated.
-Also, there are some issues with running this 
+I have added Lithuanian language and some changes to how candidate is generated - see code.
+Also, there are some issues with running this with Eclipse and Java. As far as I understand, it works with Java 8, but 
+does not work with Java 11. Don't know if it works with 9 or 10.
 
 
 Original README
