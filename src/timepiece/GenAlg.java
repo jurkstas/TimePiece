@@ -18,10 +18,10 @@ import javax.xml.bind.Unmarshaller;
 
 public class GenAlg {
 
-	public static final int POPULATION_SIZE = 1000;
+	public static final int POPULATION_SIZE = 100;
 	public static final int NONE_FOUND_PENALTY = -10000;
 	public static final int NOT_MATCHED_PENALTY = -10;
-	public static final int MATCH_BONUS = 1000;
+	public static final int MATCH_BONUS = 100;
 	public static final int WORD_MATCH_BONUS = 10;
 	public static final int COST_OF_THIS_ALGORITHM_BECOMING_SKYNET = 999999999;
 	public static final int LOW_SPLIT_BONUS = 100;
