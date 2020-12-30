@@ -1,3 +1,11 @@
+This fork
+=============
+I have added Lithuanian language and some changes to how candidate is generated.
+Also, there are some issues with running this 
+
+
+Original README
+=============
 This is just a quick hack for generating word clocks
 
 see http://miniaturegiantspacehamster.blogspot.com/2011/03/building-word-clock-part-1-genetic.html for more details!
